@@ -1,3 +1,5 @@
+
+
 /* This is the data we will be using to create our article components */
 /* Look over this data, then proceed to line 91*/
 const data = [
@@ -37,9 +39,9 @@ const data = [
         mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma
         and Parvati Sorting Hat Minister of Magic blue turban remember my last.`,
 
-    thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights
-        Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven
-        roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot
+    thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights 
+        Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven 
+        roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot 
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
   },
   {
@@ -66,8 +68,8 @@ const data = [
         consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem ipsum dolor
         sit amet, consectetur adipiscing elit. Nidoking Lorem ipsum`,
 
-    thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel
-        Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James
+    thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel 
+        Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James 
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
   },
   {
@@ -86,69 +88,32 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   },
-  {
-    title: 'New Article',
-    date: 'Jan 1st, 2020',
-    firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
-          hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
-          Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
-
-    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
-          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
-          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
-
-    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
-          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
-];
-
-let articles = document.querySelector('.articles')
-
-data.forEach(item => {
-  const article = articleCreator(item)
-  articles.appendChild(article)
-})
-
-
-function articleCreator(allArticles) {
-  const article = document.createElement('div')
-  article.classList.add('article')
-  const title = document.createElement('h2')
-  const date = document.createElement('p')
-  const firstParagraph = document.createElement('p')
-  const secondParagraph = document.createElement('p')
-  const thirdParagraph = document.createElement('p')
-  const button = document.createElement('span')
-
-  title.textContent = allArticles.title;
-  date.textContent = allArticles.date;
-  firstParagraph.textContent = allArticles.firstParagraph;
-  secondParagraph.textContent = allArticles.secondParagraph;
-  thirdParagraph.textContent = allArticles.thirdParagraph;
-  button.textContent = "expand"
-
-  button.classList.add('expandButton')
-
-  article.appendChild(title);
-  article.appendChild(date);
-  article.appendChild(firstParagraph);
-  article.appendChild(secondParagraph);
-  article.appendChild(thirdParagraph);
-  article.appendChild(button);
-
-  button.addEventListener('click', event => {
-    article.classList.toggle('article-open')
-  })
-
-return article
+{
+  title: " My first two months in Lambda School",
+  date: "Sep 4th, 2019",
+  firstParagraph: `Import Article.less from the correct path into index.less (follow the example for Header.less if you’re not sure how to write the correct path)
+  * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.`,
+  secondParagraph: `Import Article.less from the correct path into index.less (follow the example for Header.less if you’re not sure how to write the correct path)
+  * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.`,
+  thirdParagraph: `Import Article.less from the correct path into index.less (follow the example for Header.less if you’re not sure how to write the correct path)
+  * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.`
+},
+{
+  title: " My first four  months in Lambda School",
+  date: "Nov 4th, 2019",
+  firstParagraph: `Import Article.less from the correct path into index.less (follow the example for Header.less if you’re not sure how to write the correct path)
+  * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.`,
+  secondParagraph: `Import Article.less from the correct path into index.less (follow the example for Header.less if you’re not sure how to write the correct path)
+  * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.`,
+  thirdParagraph: `Import Article.less from the correct path into index.less (follow the example for Header.less if you’re not sure how to write the correct path)
+  * Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.`
 }
 
 
+];
 
-/* Step 1: Create a function that creates a component. You will want your component to look like the template below:
-
+/* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
+  
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
@@ -157,12 +122,64 @@ return article
 
     <span class='expandButton'></span>
   </div>
+  */
+
+ function articleMaker(settings) {
+
+  const  {title, date, firstParagraph, secondParagraph, thirdParagraph} = settings;
+  
+
+  const divArticle =  document.querySelector(".articles");
+
+  const divCont = document.createElement("div");
+  divCont.setAttribute("class", "article");
+  divCont.classList.add("artcle-open");
+
+  const h = document.createElement("h2");
+  h.textContent = title;
+
+  const dateCont = document.createElement("p");
+  dateCont.textContent = date;
+
+  const p1 = document.createElement("p");
+  p1.textContent = firstParagraph;
+
+  const p2 = document.createElement("p");
+  p2.textContent = secondParagraph;
+
+  const p3 = document.createElement("p");
+  p3.textContent = thirdParagraph;
 
 
+
+  const span = document.createElement("span");
+  span.setAttribute("class",'expandButton');
+  span.textContent = "show";
+  span.style.border = " 2px solid green";
+  span.style.margin = "3px";
+  span.addEventListener('click',() => {
+    divCont.classList.toggle("article-open");
+   
+  });
+
+divArticle.appendChild(divCont);
+  divCont.appendChild(h);
+  divCont.appendChild(dateCont);
+  divCont.appendChild(p1);
+  divCont.appendChild(p2);
+  divCont.appendChild(p3);
+  divCont.appendChild(span);
+  
+  return  divArticle;
+  
+}
+ 
+const articles = data.map(articleMaker);
+ /*
 
   Hint: You will need to use createElement more than once here!
 
-  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each peice of the data object above.
+  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
 
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
 
@@ -170,6 +187,6 @@ return article
 
   Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
 
-  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
+  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
